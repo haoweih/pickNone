@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Deselect All",
+  "description": "This deselect all packages for deployment.",
+  "version": "0.1",
+
+  "icons": {
+  	"128": "jenkins.png"
+  },
+  "permissions": [
+  	"tabs",
+  	"http://jenkins.mindtap.corp.web/*",
+  	"https://jenkins.mindtap.corp.web/*"
+  ],
+  "background": {
+  	"scripts" : [
+  		"deselect.js"
+  	],
+  	"persistent": false
+  },
+  "page_action": {
+    "default_title": "Deselect all pull down",
+    "default_icon": "cengage.png"
+  }
+}
